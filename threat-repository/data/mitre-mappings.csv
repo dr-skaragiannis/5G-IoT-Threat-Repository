@@ -1,0 +1,142 @@
+threat_id,framework,technique_id,technique_name,url,rationale
+TR-RAN-001,FiGHT,FGT5026,SIM Cloning,https://fight.mitre.org/techniques/FGT5026,"The attach uses the stored (SUPI, K, OPc) of an existing subscriber record."
+TR-RAN-001,FiGHT,FGT1583.502,Acquire Infrastructure: Programmable UE Devices,https://fight.mitre.org/techniques/FGT1583.502,A software UE is stood up specifically to attach to the victim RAN.
+TR-RAN-001,FiGHT,FGT1195.501,Supply Chain Compromise: SIM Credentials Theft,https://fight.mitre.org/techniques/FGT1195.501,Credentials obtained in bulk from the SIM data repository rather than a physical card.
+TR-RAN-001,ATT&CK,T1078,Valid Accounts,https://attack.mitre.org/techniques/T1078/,Authentication succeeds with legitimate long-term credentials; nothing looks anomalous to the AMF.
+TR-RAN-001,ATT&CK,T1610,Deploy Container,https://attack.mitre.org/techniques/T1610/,`docker run` places an attacker-controlled workload directly on the core bridge.
+TR-RAN-002,ATT&CK,T1499.001,Endpoint DoS: OS Exhaustion Flood,https://attack.mitre.org/techniques/T1499/001/,Unbounded retransmission plus unanswered ARP consumes neighbour-table and softirq budget on every host on the bridge.
+TR-RAN-002,ATT&CK,T1498,Network Denial of Service,https://attack.mitre.org/techniques/T1498/,A single endpoint saturates the shared segment carrying all 5G interfaces.
+TR-RAN-002,FiGHT,FGT1499,Endpoint Denial of Service,https://fight.mitre.org/techniques/FGT1499,Availability degradation at a 5G endpoint through flooding.
+TR-RAN-002,FiGHT,FGT1642.501,Endpoint DoS: Transmit Spoofed Broadcast Message,https://fight.mitre.org/techniques/FGT1642.501,The broadcast ARP component propagates load to hosts not party to the conversation.
+TR-N2-001,FiGHT,FGT1498.501,Network DoS: Flooding Core Network Component,https://fight.mitre.org/techniques/FGT1498.501,High-volume signalling directed at a core NF to exhaust it — the technique's literal definition.
+TR-N2-001,FiGHT,FGT1642.503,Endpoint DoS: AMF,https://fight.mitre.org/techniques/FGT1642.503,The AMF is the named target and the injected NGAP is intended to disrupt the attach procedure.
+TR-N2-001,FiGHT,FGT1498.503,Network DoS: Malicious Packets To Network Functions,https://fight.mitre.org/techniques/FGT1498.503,Crafted/replayed NGAP is sent from an off-RAN position to slow or crash the AMF.
+TR-N2-001,ATT&CK,T1498,Network Denial of Service,https://attack.mitre.org/techniques/T1498/,Volumetric saturation of a network service.
+TR-N2-001,ATT&CK,T1499.002,Endpoint DoS: Service Exhaustion Flood,https://attack.mitre.org/techniques/T1499/002/,"The AMF's NGAP processing path, not the link, is the resource being exhausted."
+TR-N2-001,ATT&CK,T1588.002,Obtain Capabilities: Tool,https://attack.mitre.org/techniques/T1588/002/,5GReplay is acquired from a public repository specifically to conduct the attack.
+TR-N2-001,ATT&CK,T1565.002,Data Manipulation: Transmitted Data Manipulation,https://attack.mitre.org/techniques/T1565/002/,The tool rewrites forwarding targets so recorded signalling is delivered to a host that was never its destination.
+TR-N2-002,FiGHT,FGT1600.502,Weaken Encryption: Network Interfaces,https://fight.mitre.org/techniques/FGT1600.502,"The N2 interface operates with encryption absent, enabling eavesdropping on signalling."
+TR-N2-002,FiGHT,FGT5009.002,Weaken Integrity: Network Interfaces,https://fight.mitre.org/techniques/FGT5009.002,No integrity protection on N2 permits transmitted-data manipulation and replay.
+TR-N2-002,FiGHT,FGT1557.503,Adversary-in-the-Middle: Non-SBI,https://fight.mitre.org/techniques/FGT1557.503,An attacker on the shared segment can position between gNB and AMF on a non-SBI interface.
+TR-N2-002,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,Control-plane signalling is captured and decoded without any key material.
+TR-N3-001,FiGHT,FGT5031,Discover Tunnel Endpoint ID (TEID),https://fight.mitre.org/techniques/FGT5031,"The technique is precisely ""discover a valid GTP-U TEID in order to apply additional techniques""."
+TR-N3-001,FiGHT,FGT1040.502,Network Sniffing: Eavesdrop On U Plane Data,https://fight.mitre.org/techniques/FGT1040.502,Inner user-plane payloads are recovered from the tunnel.
+TR-N3-001,FiGHT,FGT1572.501,Protocol Tunneling: UE Access Via GTP-U,https://fight.mitre.org/techniques/FGT1572.501,Knowledge of the TEID is what enables an illicit session with the target UE.
+TR-N3-001,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,Tunnel identifiers and payloads captured passively.
+TR-N3-001,ATT&CK,T1046,Network Service Discovery,https://attack.mitre.org/techniques/T1046/,UDP/2152 enumerated to locate the user-plane service.
+TR-N3-002,FiGHT,FGT5021,Tunnel ID Uniqueness Failure,https://fight.mitre.org/techniques/FGT5021,User traffic is disrupted because the TEID in use no longer maps to valid forwarding state.
+TR-N3-002,FiGHT,FGT1499.503,Endpoint DoS: DOS A UE Via gNB Or NF Signaling,https://fight.mitre.org/techniques/FGT1499.503,Control-plane signalling leaves one or more UEs without service.
+TR-N3-002,FiGHT,FGT1499.504,Endpoint DoS: DOS A UE Via Established GTP-U Tunnel,https://fight.mitre.org/techniques/FGT1499.504,The established tunnel is the vector through which service is lost.
+TR-N3-002,ATT&CK,T1499,Endpoint Denial of Service,https://attack.mitre.org/techniques/T1499/,Service availability for specific endpoints is removed.
+TR-N4-001,FiGHT,FGT1600.502,Weaken Encryption: Network Interfaces,https://fight.mitre.org/techniques/FGT1600.502,N4 operates with encryption absent on a non-SBI interface.
+TR-N4-001,FiGHT,FGT5009.002,Weaken Integrity: Network Interfaces,https://fight.mitre.org/techniques/FGT5009.002,No integrity protection on N4 permits forged session-management messages.
+TR-N4-001,FiGHT,FGT1557.503,Adversary-in-the-Middle: Non-SBI,https://fight.mitre.org/techniques/FGT1557.503,An attacker on the shared segment can interpose between SMF and UPF.
+TR-N4-001,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,Session-management signalling captured and decoded without keys.
+TR-N4-001,ATT&CK,T1565.002,Data Manipulation: Transmitted Data Manipulation,https://attack.mitre.org/techniques/T1565/002/,Absence of integrity protection is what makes in-flight manipulation possible.
+TR-N4-002,FiGHT,FGT5021,Tunnel ID Uniqueness Failure,https://fight.mitre.org/techniques/FGT5021,Guessable session identifiers let an attacker collide with or displace live forwarding state.
+TR-N4-002,FiGHT,FGT1498.503,Network DoS: Malicious Packets To Network Functions,https://fight.mitre.org/techniques/FGT1498.503,Crafted PFCP sent to the UPF to disrupt sessions.
+TR-N4-002,FiGHT,FGT1499.503,Endpoint DoS: DOS A UE Via gNB Or NF Signaling,https://fight.mitre.org/techniques/FGT1499.503,The result is targeted loss of service for specific UEs.
+TR-N4-002,ATT&CK,T1499,Endpoint Denial of Service,https://attack.mitre.org/techniques/T1499/,Session state is exhausted or destroyed.
+TR-N4-002,ATT&CK,T1110,Brute Force,https://attack.mitre.org/techniques/T1110/,"A 4,096-value identifier space is enumerated exhaustively."
+TR-N4-002,ATT&CK,T1565,Data Manipulation,https://attack.mitre.org/techniques/T1565/,Session Modification rewrites forwarding rules for a subscriber.
+TR-N4-003,ATT&CK,T1588.002,Obtain Capabilities: Tool,https://attack.mitre.org/techniques/T1588/002/,A purpose-built exploit script is acquired and staged on the target host.
+TR-N4-003,ATT&CK,T1608,Stage Capabilities,https://attack.mitre.org/techniques/T1608/,The script is placed and located across containers before use.
+TR-N4-003,ATT&CK,T1046,Network Service Discovery,https://attack.mitre.org/techniques/T1046/,`ss -lunp | grep 8805` enumerates the N4 listener before targeting it.
+TR-N4-003,FiGHT,FGT1587.004,Develop Capabilities: Exploits,https://fight.mitre.org/techniques/FGT1587.004,A 5G-specific exploit is developed or adapted for the N4 interface.
+TR-N4-003,FiGHT,FGT1498.503,Network DoS: Malicious Packets To Network Functions,https://fight.mitre.org/techniques/FGT1498.503,The tool's purpose is to send crafted PFCP to the UPF.
+TR-SUB-001,FiGHT,FGT1195.501,Supply Chain Compromise: SIM Credentials Theft,https://fight.mitre.org/techniques/FGT1195.501,Bulk SIM credentials obtained by compromising the SIM data repository.
+TR-SUB-001,FiGHT,FGT5026,SIM Cloning,https://fight.mitre.org/techniques/FGT5026,"Possession of (SUPI, K, OPc) is precisely what enables cloning."
+TR-SUB-001,FiGHT,FGT5020,Retrieve UE Subscription Data,https://fight.mitre.org/techniques/FGT5020,Subscription records including security material are retrieved wholesale.
+TR-SUB-001,FiGHT,FGT1600.502,Weaken Encryption: Network Interfaces,https://fight.mitre.org/techniques/FGT1600.502,"Key material crosses SBI unencrypted, so sniffing suffices."
+TR-SUB-001,ATT&CK,T1552,Unsecured Credentials,https://attack.mitre.org/techniques/T1552/,Long-term secrets stored and transmitted in recoverable form.
+TR-SUB-001,ATT&CK,T1213,Data from Information Repositories,https://attack.mitre.org/techniques/T1213/,The subscriber repository is mined for credential material.
+TR-SUB-001,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,The same secrets are obtainable passively from SBI traffic.
+TR-SUB-002,FiGHT,FGT5019.004,Subscriber Profile Identifier Discovery: Intercept Unencrypted SUPI,https://fight.mitre.org/techniques/FGT5019.004,The SUPI is readable because the SUCI is unencrypted.
+TR-SUB-002,FiGHT,FGT5019.001,Subscriber Profile Identifier Discovery: Intercept Home Network Via SUCI,https://fight.mitre.org/techniques/FGT5019.001,The SUCI also discloses MCC/MNC and routing indicator.
+TR-SUB-002,FiGHT,FGT5012.004,Locate UE: Core Network Function Signaling,https://fight.mitre.org/techniques/FGT5012.004,A permanent identifier in signalling enables location tracking over time.
+TR-SUB-002,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,Identity recovered passively from signalling.
+TR-SUB-003,FiGHT,FGT1600.502,Weaken Encryption: Network Interfaces,https://fight.mitre.org/techniques/FGT1600.502,"SBI operates with TLS absent, enabling eavesdropping on signalling."
+TR-SUB-003,FiGHT,FGT5019.003,Subscriber Profile Identifier Discovery: Obtain Subscriber Identifier Via NF,https://fight.mitre.org/techniques/FGT5019.003,SUPI is obtained from network-function signalling.
+TR-SUB-003,FiGHT,FGT1557.504,Adversary-in-the-Middle: Service Based Interface,https://fight.mitre.org/techniques/FGT1557.504,An attacker between NFs on the SBI can sniff or modify.
+TR-SUB-003,FiGHT,FGT5003,Network Function Service Discovery,https://fight.mitre.org/techniques/FGT5003,"Unprotected NRF/SCP traffic reveals every NF, its services and its instance IDs."
+TR-SUB-003,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,Identity and session data captured passively.
+TR-SUB-003,ATT&CK,T1071.001,Application Layer Protocol: Web Protocols,https://attack.mitre.org/techniques/T1071/001/,Signalling rides HTTP/2 without transport protection.
+TR-SUB-004,FiGHT,FGT5012.004,Locate UE: Core Network Function Signaling,https://fight.mitre.org/techniques/FGT5012.004,Core signalling is exploited to associate a subscriber with an observable session.
+TR-SUB-004,FiGHT,FGT5019.003,Subscriber Profile Identifier Discovery: Obtain Subscriber Identifier Via NF,https://fight.mitre.org/techniques/FGT5019.003,The SUPI is obtained from NF signalling alongside the session context.
+TR-SUB-004,FiGHT,FGT1040,Network Sniffing,https://fight.mitre.org/techniques/FGT1040,The binding is captured passively from the SBI.
+TR-SUB-004,ATT&CK,T1119,Automated Collection,https://attack.mitre.org/techniques/T1119/,The binding table is built automatically from continuous signalling.
+TR-SUB-004,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,Parent technique for the capture itself.
+TR-DB-001,ATT&CK,T1213,Data from Information Repositories,https://attack.mitre.org/techniques/T1213/,The subscriber repository is queried directly for its contents.
+TR-DB-001,ATT&CK,T1078.001,Valid Accounts: Default Accounts,https://attack.mitre.org/techniques/T1078/001/,The service runs in its unauthenticated default posture; no account is needed.
+TR-DB-001,ATT&CK,T1552,Unsecured Credentials,https://attack.mitre.org/techniques/T1552/,Credential material is retrievable without authenticating.
+TR-DB-001,FiGHT,FGT5020,Retrieve UE Subscription Data,https://fight.mitre.org/techniques/FGT5020,Subscription data is retrieved wholesale from the repository.
+TR-DB-001,FiGHT,FGT1195.501,Supply Chain Compromise: SIM Credentials Theft,https://fight.mitre.org/techniques/FGT1195.501,The SIM data repository is the compromised element.
+TR-DB-001,FiGHT,FGT5022,Alter Subscriber Profile,https://fight.mitre.org/techniques/FGT5022,"The same unauthenticated access permits writes, not only reads."
+TR-DB-002,ATT&CK,T1610,Deploy Container,https://attack.mitre.org/techniques/T1610/,"A container is deployed to execute the collection, then discarded."
+TR-DB-002,ATT&CK,T1213,Data from Information Repositories,https://attack.mitre.org/techniques/T1213/,The subscriber repository is the collection target.
+TR-DB-002,ATT&CK,T1119,Automated Collection,https://attack.mitre.org/techniques/T1119/,One command dumps the whole collection without interaction.
+TR-DB-002,ATT&CK,T1552,Unsecured Credentials,https://attack.mitre.org/techniques/T1552/,The extracted records contain usable long-term key material.
+TR-DB-002,ATT&CK,T1070.004,Indicator Removal: File Deletion,https://attack.mitre.org/techniques/T1070/004/,`--rm` destroys the container and its filesystem on exit.
+TR-DB-002,FiGHT,FGT5013,Malicious VNF Instantiation,https://fight.mitre.org/techniques/FGT5013,A container is instantiated on the core network to collect information.
+TR-DB-002,FiGHT,FGT5020,Retrieve UE Subscription Data,https://fight.mitre.org/techniques/FGT5020,Subscription data is retrieved in bulk.
+TR-VIRT-001,ATT&CK,T1611,Escape to Host,https://attack.mitre.org/techniques/T1611/,A privileged container mounts the host filesystem and executes on it — the technique's canonical example.
+TR-VIRT-001,ATT&CK,T1609,Container Administration Command,https://attack.mitre.org/techniques/T1609/,`docker exec` is used to obtain execution inside the target container.
+TR-VIRT-001,ATT&CK,T1613,Container and Resource Discovery,https://attack.mitre.org/techniques/T1613/,"Privileged status, capabilities and mounts are enumerated across all containers first."
+TR-VIRT-001,ATT&CK,T1548,Abuse Elevation Control Mechanism,https://attack.mitre.org/techniques/T1548/,Excess Linux capabilities are the elevation mechanism abused.
+TR-VIRT-001,FiGHT,FGT1611,Escape to Host,https://fight.mitre.org/techniques/FGT1611,5G-context container escape from a network function.
+TR-VIRT-001,FiGHT,FGT1611.501,Malicious Privileged container-VNF Shared Resource Access,https://fight.mitre.org/techniques/FGT1611.501,A privileged VNF container reaches data belonging to the underlying shared resources.
+TR-VIRT-001,FiGHT,FGT1609,Container Administration Command,https://fight.mitre.org/techniques/FGT1609,The container administration service is abused to execute commands in the VNF.
+TR-VIRT-002,ATT&CK,T1613,Container and Resource Discovery,https://attack.mitre.org/techniques/T1613/,"Privileged status, capabilities and LSM profiles are enumerated across the cluster."
+TR-VIRT-002,ATT&CK,T1548,Abuse Elevation Control Mechanism,https://attack.mitre.org/techniques/T1548/,Excess capabilities are the elevation path.
+TR-VIRT-002,ATT&CK,T1082,System Information Discovery,https://attack.mitre.org/techniques/T1082/,"Kernel version, OS release and Docker version are fingerprinted (`bash_history_v2:56-60`)."
+TR-VIRT-002,FiGHT,FGT1611.501,Malicious Privileged container-VNF Shared Resource Access,https://fight.mitre.org/techniques/FGT1611.501,Privileged VNF containers can reach shared host resources.
+TR-VIRT-002,FiGHT,FGT5014,Shared Resource Discovery,https://fight.mitre.org/techniques/FGT5014,Co-resident VNFs and their shared host resources are identified.
+TR-VIRT-003,ATT&CK,T1609,Container Administration Command,https://attack.mitre.org/techniques/T1609/,The container administration service is used to execute commands inside workloads.
+TR-VIRT-003,ATT&CK,T1613,Container and Resource Discovery,https://attack.mitre.org/techniques/T1613/,Mounts and socket exposure are enumerated across the cluster.
+TR-VIRT-003,ATT&CK,T1611,Escape to Host,https://attack.mitre.org/techniques/T1611/,An exposed docker.sock is an explicitly documented escape route.
+TR-VIRT-003,FiGHT,FGT1609,Container Administration Command,https://fight.mitre.org/techniques/FGT1609,5G-context abuse of the container administration service against VNFs.
+TR-VIRT-003,FiGHT,FGT1613,Container and Resource Discovery,https://fight.mitre.org/techniques/FGT1613,Discovery of containerised network functions and their configuration.
+TR-VIRT-004,FiGHT,FGT1557.503,Adversary-in-the-Middle: Non-SBI,https://fight.mitre.org/techniques/FGT1557.503,A shared segment lets an attacker interpose on N2/N3/N4.
+TR-VIRT-004,FiGHT,FGT1557.504,Adversary-in-the-Middle: Service Based Interface,https://fight.mitre.org/techniques/FGT1557.504,The same position works against SBI traffic.
+TR-VIRT-004,FiGHT,FGT1599.501,Network Boundary Bridging: Malicious Co-Tenancy Exploit Of NFVI,https://fight.mitre.org/techniques/FGT1599.501,Co-tenancy without isolation gives access across intended boundaries.
+TR-VIRT-004,FiGHT,FGT5014,Shared Resource Discovery,https://fight.mitre.org/techniques/FGT5014,Co-resident network functions are trivially enumerable.
+TR-VIRT-004,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,One capture position yields every interface.
+TR-VIRT-004,ATT&CK,T1018,Remote System Discovery,https://attack.mitre.org/techniques/T1018/,`arp-scan --localnet` enumerates the whole core from one container.
+TR-VIRT-005,FiGHT,FGT5021,Tunnel ID Uniqueness Failure,https://fight.mitre.org/techniques/FGT5021,Identifier reuse causes new traffic to collide with state belonging to a previous session.
+TR-VIRT-005,FiGHT,FGT1599.501,Network Boundary Bridging: Malicious Co-Tenancy Exploit Of NFVI,https://fight.mitre.org/techniques/FGT1599.501,Shared infrastructure delivers one workload's traffic to another.
+TR-VIRT-005,ATT&CK,T1036,Masquerading,https://attack.mitre.org/techniques/T1036/,The reused address makes a tools container indistinguishable from the gNB in logs.
+TR-VIRT-005,ATT&CK,T1070,Indicator Removal,https://attack.mitre.org/techniques/T1070/,Address recycling destroys the link between an observed indicator and the workload that produced it.
+TR-AI-001,ATLAS,AML.T0020,Training Data Poisoning,https://atlas.mitre.org/techniques/AML.T0020,Labels in the training set are altered to influence the resulting model's behaviour.
+TR-AI-001,ATLAS,AML.T0018.000,Manipulate AI Model: Poison AI Model,https://atlas.mitre.org/techniques/AML.T0018.000,Training on poisoned data produces a poisoned model.
+TR-AI-001,ATLAS,AML.T0031,Erode AI Model Integrity,https://atlas.mitre.org/techniques/AML.T0031,Model performance is degraded on the class the adversary cares about.
+TR-AI-001,ATLAS,AML.T0042,Verify Attack,https://atlas.mitre.org/techniques/AML.T0042,ASR is computed to confirm the poisoning worked before relying on it.
+TR-AI-001,ATT&CK,T1565.001,Data Manipulation: Stored Data Manipulation,https://attack.mitre.org/techniques/T1565/001/,The stored training corpus is modified.
+TR-AI-001,ATT&CK,T1562.001,Impair Defenses: Disable or Modify Tools,https://attack.mitre.org/techniques/T1562/001/,The outcome is a defensive tool that no longer detects the attack.
+TR-AI-002,ATLAS,AML.T0043,Craft Adversarial Data,https://atlas.mitre.org/techniques/AML.T0043,Inputs are modified so the model produces the adversary's desired misclassification.
+TR-AI-002,ATLAS,AML.T0043.000,Craft Adversarial Data: White-Box Optimization,https://atlas.mitre.org/techniques/AML.T0043.000,The attacker has full access to the target model and optimises against it directly.
+TR-AI-002,ATLAS,AML.T0043.003,Craft Adversarial Data: Manual Modification,https://atlas.mitre.org/techniques/AML.T0043.003,A single feature is modified by hand using knowledge of the model.
+TR-AI-002,ATLAS,AML.T0015,Evade AI Model,https://atlas.mitre.org/techniques/AML.T0015,Crafted data prevents the model from identifying the attack correctly.
+TR-AI-002,ATLAS,AML.T0044,Full AI Model Access,https://atlas.mitre.org/techniques/AML.T0044,"White-box access to architecture, parameters and class ontology enables offline crafting."
+TR-AI-002,ATLAS,AML.T0042,Verify Attack,https://atlas.mitre.org/techniques/AML.T0042,The evasion rate is measured before the technique is relied upon.
+TR-AI-002,ATT&CK,T1562.001,Impair Defenses: Disable or Modify Tools,https://attack.mitre.org/techniques/T1562/001/,The practical effect is a detection tool that no longer fires.
+TR-AI-003,ATLAS,AML.T0015,Evade AI Model,https://atlas.mitre.org/techniques/AML.T0015,A minimal feature space makes evasion structurally available.
+TR-AI-003,ATLAS,AML.T0013,Discover AI Model Ontology,https://atlas.mitre.org/techniques/AML.T0013,"The output classes are enumerated (`ensemble_model.classes_`, `y_train.value_counts()`)."
+TR-AI-003,ATLAS,AML.T0031,Erode AI Model Integrity,https://atlas.mitre.org/techniques/AML.T0031,Confidence in the detector is not warranted by what it measures.
+TR-AI-003,ATLAS,AML.T0046,Spamming AI System with Chaff Data,https://atlas.mitre.org/techniques/AML.T0046,A size-only model is trivially flooded with misleading detections.
+TR-AI-004,ATLAS,AML.T0035,AI Artifact Collection,https://atlas.mitre.org/techniques/AML.T0035,Datasets and telemetry produced by the AI system are collected in one place.
+TR-AI-004,ATLAS,AML.T0037,Data from Local System,https://atlas.mitre.org/techniques/AML.T0037,The corpus is a local file with no protection.
+TR-AI-004,ATLAS,AML.T0010.002,AI Supply Chain Compromise: Data,https://atlas.mitre.org/techniques/AML.T0010.002,Unprotected training data is the supply-chain element an adversary targets.
+TR-AI-004,ATLAS,AML.T0025,Exfiltration via Cyber Means,https://atlas.mitre.org/techniques/AML.T0025,A single readable file carries the whole corpus off the host.
+TR-AI-004,ATT&CK,T1005,Data from Local System,https://attack.mitre.org/techniques/T1005/,Sensitive derived data collected from the filesystem.
+TR-AI-004,ATT&CK,T1119,Automated Collection,https://attack.mitre.org/techniques/T1119/,`tshark` to CSV is automated bulk collection.
+TR-OPS-001,ATT&CK,T1040,Network Sniffing,https://attack.mitre.org/techniques/T1040/,Traffic is captured wholesale from a host with visibility of every interface.
+TR-OPS-001,ATT&CK,T1119,Automated Collection,https://attack.mitre.org/techniques/T1119/,"Detached, unattended capture over hours."
+TR-OPS-001,ATT&CK,T1005,Data from Local System,https://attack.mitre.org/techniques/T1005/,Capture files persist on the host afterwards.
+TR-OPS-001,FiGHT,FGT1040,Network Sniffing,https://fight.mitre.org/techniques/FGT1040,5G-context interception of signalling and user-plane traffic.
+TR-OPS-001,FiGHT,FGT1020.001,Automated Exfiltration: Traffic Duplication,https://fight.mitre.org/techniques/FGT1020.001,Wholesale traffic duplication to a file for later analysis.
+TR-OPS-002,ATT&CK,T1588.002,Obtain Capabilities: Tool,https://attack.mitre.org/techniques/T1588/002/,Tools are downloaded from public sources for use against the target.
+TR-OPS-002,ATT&CK,T1105,Ingress Tool Transfer,https://attack.mitre.org/techniques/T1105/,Binaries are transferred onto the target host over the network.
+TR-OPS-002,ATT&CK,T1608,Stage Capabilities,https://attack.mitre.org/techniques/T1608/,"Tools are unpacked, made executable and verified before use."
+TR-OPS-002,ATT&CK,T1610,Deploy Container,https://attack.mitre.org/techniques/T1610/,Public images are pulled and attached to the core network.
+TR-OPS-002,ATLAS,AML.T0016.001,Obtain Capabilities: Software Tools,https://atlas.mitre.org/techniques/AML.T0016.001,ML libraries are obtained to build and attack the model.
+TR-OPS-002,FiGHT,FGT1588.002,Obtain Capabilities: Tool,https://fight.mitre.org/techniques/FGT1588.002,5G-specific attack tooling obtained for use against the core.

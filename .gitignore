@@ -11,3 +11,6 @@ exercises_logs_anonymised/captures/module3.pcap
 Thumbs.db
 .DS_Store
 *.swp
+
+# temporary authoring staging
+threat-repository/.fp/
