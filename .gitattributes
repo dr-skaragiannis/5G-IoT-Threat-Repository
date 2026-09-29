@@ -1,0 +1,11 @@
+# These are captured data and log artefacts: preserve every byte exactly.
+# Prevents Git from applying CRLF normalisation to dataset files.
+*.pcap binary
+netflows/*.csv binary
+exercises_logs_anonymised/histories/* binary
+exercises_logs_anonymised/*.json binary
+exercises_logs_anonymised/*.md binary
+
+# Let Git normalise actual text/source files as usual.
+*.gitignore text eol=lf
+*.gitattributes text eol=lf

@@ -1,0 +1,13 @@
+# Raw, un-anonymised capture logs.
+# Excluded from this public repository: contains un-redacted SIM authentication
+# keys (K/OPc), IMSIs and IMEISVs. See exercises_logs_anonymised/anonymisation_report.md.
+exercises_logs/
+
+# 581.7 MB - exceeds GitHub's 100 MB hard per-file limit.
+# Obtain separately; the netflows CSV derived from it is tracked below.
+exercises_logs_anonymised/captures/module3.pcap
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+*.swp

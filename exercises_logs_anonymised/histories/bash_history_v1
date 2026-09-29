@@ -1,0 +1,500 @@
+docker ps -a --filter name=ui1niore5iiaudandim5su51rsn   --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
+docker inspect ui1niore5iiaudandim5su51rsn   --format 'Path={{.Path}} Args={{json .Args}}'
+docker inspect ui1niore5iiaudandim5su51rsn   --format 'Path={{.Path}} Args={{json .Args}}'
+docker logs ui1niore5iiaudandim5su51rsn 2>&1 | head -80
+docker ps -a --filter name=g1b1   --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
+docker logs g1b1 2>&1 | head -604
+docker logs g1b1 2>&1 | head -60
+docker logs g1b1 2>&1 | head -604
+docker logs g1b1 2>&1 | head -60
+docker inspect g1b1   --format '{{range .NetworkSettings.Networks}}Network={{.NetworkID}} IP={{.IPAddress}}{{end}}'
+docker start g1b1
+sleep 3
+docker ps -a --filter name=g1b1   --format "table {{.Names}}\t{{.Status}}"
+docker inspect g1b1   --format '{{range .NetworkSettings.Networks}}Network={{.NetworkID}} IP={{.IPAddress}}{{end}}'
+ps aux | grep tcpdump
+sudo kill -15 206803
+sudo kill -15 570471
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker ps
+docker exec -it g1b1 bash
+/usr/local/bin/nr-uu -c /etc/snseiimm/uu.yaml
+docker ps
+/usr/local/bin/nr-uu -c /etc/snseiimm/uu.yaml
+/usr/local/bin/nr-uu -c /etc/snseiimm/uu.yaml
+docker exec -it g1b1 bash
+assmaescoeen5iin555ioaea5nssd5nrupo55
+docker compose config --services
+cd assmaescoeen5iin555ioaea5nssd5nrupo55
+docker compose config --services
+ls -la
+docker exec g1b1 sh -lc "grep -o '\${[^}]*}' /etc/snseiimm/uu.yaml | sort -u"
+docker exec g1b1 env | sort
+grep -nE 'KEY|OP_TYPE|OP=|MSISDN|APN|GNB_IP' README.md register_subscriber.sh g1b1.yaml gng2.yaml ngc.yaml
+grep -nE 'APN|MSISDN|KEY|OP_TYPE|^[[:space:]]*OP:' g1b1.yaml
+docker inspect g1b1 --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+docker exec -it g1b1 ip a
+docker exec g1b1 pgrep -af nr-uu
+docker exec g1b1 ls -l /dev/net/tun
+ls -l /dev/net/tun
+docker inspect g1b1 --format 'Privileged={{.HostConfig.Privileged}} CapAdd={{json .HostConfig.CapAdd}} Devices={{json .HostConfig.Devices}}'
+docker inspect g1b1 --format '{{range $k,$v := .NetworkSettings.Networks}}{{$k}}{{end}}'
+docker run --rm -it   --name e1e   --network dfoiaas5llpretddralsgmsrsner   --device /dev/net/tun:/dev/net/tun   --cap-add NET_ADMIN   -e MCC=999   -e MNC=70   -e MSISDN=0467136224   -e KEY=716443940B35EC8A7EDA57F98A9A70E6   -e OP_TYPE=OPC   -e OP=A14B42703DEBABBE206D7597D93D65FA   -e APN=internet   -e GNB_IP=172.18.0.2   -e SST=1   -e SD=0xffffff   gradiant/snseiimm:3.2.6 uu
+docker exec -it e1e ip a
+docker logs e1e
+docker exec e1e pgrep -af nr-uu
+docker logs e1e
+docker logs --since 5m g1b1
+docker logs --since 5m mspremeainouona15nrrrdpeia
+docker logs g1b1 2>&1 | tail -n 100
+docker logs mspremeainouona15nrrrdpeia 2>&1 | tail -n 100
+docker exec g1b1 sh -lc 'cat /proc/net/sctp/assocs'
+docker rm -f e1e
+cd assmaescoeen5iin555ioaea5nssd5nrupo55
+docker compose -f g1b1.yaml up -d ues1
+docker compose -f g1b1.yaml exec ues1 ip a
+cd assmaescoeen5iin555ioaea5nssd5nrupo55
+docker compose -f g1b1.yaml logs --tail=100 ues1
+docker exec g1b1 nr-cli --dump
+ps aux | grep tcpdump
+sudo kill -15 985636
+ping 8.8.8.8
+sudo kill -15 207002
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo tshark -i any -f "icmp" -Y "icmp.type == 8" -T fields -e ip.ttl
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo tshark -i any -Y 'pfcp && (pfcp.msg_type == 1 || pfcp.msg_type == 2)'
+sudo kill -15 680954
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+ping -I uesimtun0 8.8.8.8
+docker ps
+ui1niore5iiaudandim5su51rsn
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker logs --tail 100 ui1niore5iiaudandim5su51rsn
+docker logs --tail 80 am5f5ge15af1pfuesap5spprn15
+docker ps --format "table {{.Names}}\t{{.Status}}" | grep -E "ues|nbg|amf|nrf|scp|nssf|pcf"
+docker logs --tail 100 gremferm1rucp5mdupn5iadfac
+docker ps -a | grep -i mongo
+docker logs --tail 100 d5armiom51s111nieeoogadu5gsp
+docker inspect d5armiom51s111nieeoogadu5gsp --format='ExitCode={{.State.ExitCode}} OOMKilled={{.State.OOMKilled}} Error={{.State.Error}}'
+docker start d5armiom51s111nieeoogadu5gsp
+docker ps --format "table {{.Names}}\t{{.Status}}" | grep -E "mongo|pcf"
+docker ps --format "table {{.Names}}\t{{.Status}}" | grep -E "mongo|pcf"
+docker ps --format "table {{.Names}}\t{{.Status}}" | grep -E "mongo|pcf"
+docker restart gremferm1rucp5mdupn5iadfac
+docker ps --format "table {{.Names}}\t{{.Status}}" | grep -E "mongo|pcf"
+docker restart ui1niore5iiaudandim5su51rsn
+docker logs --tail 50 ui1niore5iiaudandim5su51rsn
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo tshark -i any -Y "gtp && icmp"
+sudo tshark -i any -Y "gtp && icmp" -V
+ps aux | grep tcpdump
+sudo kill -15 705652
+ping -I uesimtun1 8.8.8.8
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo tshark -i any -Y "gtp && icmp && ip.addr==10.45.0.3" -T fields -e gtp.teid
+ps aux | grep tcpdump
+sudo kill -15 370237
+ps aux | grep tcpdump
+sudo tshark -i any -Y "sctp"
+sudo tshark -i any -Y "sctp.chunk_type == 4" -T fields -e frame.number -e frame.len -e ip.src -e ip.dst
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 159376
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 602047
+cat uu.yaml
+grep -i "mcc" uu.yaml
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 085631
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo kill -15 625468
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 127098
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo kill -15 548758
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker logs mspremeainouona15nrrrdpeia -f
+docker logs mspremeainouona15nrrrdpeia 2>&1 | grep -Ei "suci|registration|reject|fail" | tail -30
+docker logs mspremeainouona15nrrrdpeia 2>&1 | grep -Ei "suci|registration|reject|fail" | tail -30
+docker logs --since 10m mspremeainouona15nrrrdpeia 2>&1 | grep -Ei "registration.*fail|authentication failure|not registered|NAS handling failed" | tail -50
+docker logs --since 10m mspremeainouona15nrrrdpeia 2>&1 | tail -80
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker logs mspremeainouona15nrrrdpeia 2>&1 | grep -E "\[suci-.*\].*failure \[[0-9]+\]"
+docker logs -f mspremeainouona15nrrrdpeia 2>&1 | grep -Ei --line-buffered "registration|authentication|fail|reject|deregister|not registered|NAS"
+ps aux | grep tcpdump
+sudo kill -15 520874
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker logs mspremeainouona15nrrrdpeia 2>&1 | grep -E "\[suci-.*\] Registration reject \[[0-9]+\]"
+docker logs -f mspremeainouona15nrrrdpeia 2>&1 | grep --line-buffered -Ei "Registration|reject|fail|deregister|NAS"
+docker exec mspremeainouona15nrrrdpeia sh -c 'grep "08/13" tolepaamflpvatvgslt5lmsptlaeamaratoo | tail -80'
+docker exec mspremeainouona15nrrrdpeia sh -c 'grep -a "08/13" tolepaamflpvatvgslt5lmsptlaeamaratoo | tail -100'
+docker exec mspremeainouona15nrrrdpeia sh -c 'grep -a "08/13" tolepaamflpvatvgslt5lmsptlaeamaratoo | grep -Ei "suci|registration|authentication|fail|reject|deregister|not registered" | tail -80'
+ ps aux | grep tcpdump
+sudo kill -15 757455
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+ls -l ngc.yaml g1b1.yaml register_subscriber.sh
+docker inspect mspremeainouona15nrrrdpeia --format '{{ index .Config.Labels "com.docker.compose.project.working_dir" }}'
+docker inspect mspremeainouona15nrrrdpeia --format '{{ index .Config.Labels "com.docker.compose.project.config_files" }}'
+cd /home/noinr/5g-images/docs/dspampmu55risungsi5o
+ls -la
+docker compose -f ngc.yaml down
+docker compose -f g1b1.yaml down
+docker compose -f ngc.yaml up -d
+./register_subscriber.sh
+docker compose -f g1b1.yaml up -d
+docker exec mspremeainouona15nrrrdpeia sh -c 'grep -a "Number of gNB-UEs" tolepaamflpvatvgslt5lmsptlaeamaratoo | tail -10'
+ps aux | grep tcpdump
+sudo kill -15 256042
+ps aux | grep tcpdump
+sudo kill -15 867910
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+cd /
+ls -ld 5GReplay
+cd /
+tar -cf - 5GReplay | md5sum
+sudo find / -maxdepth 4 -type d -iname "*5greplay*" 2>/dev/null
+cd /home/noinr
+tar -cf - 5Greplay | md5sum
+sudo kill -15 966347
+cd /home/noinr/5Greplay-0.0.1
+grep -n -A 15 -B 3 "103" forward-localhost.xml
+find /home/noinr -maxdepth 4 -type d -iname "*5greplay*" 2>/dev/null
+find /home/noinr -type f -name "forward-localhost.xml" 2>/dev/null
+grep -n -A 15 -B 5 "103" /home/noinr/5Greplay-0.0.1/rules/forward-localhost.xml
+FILE=$(find /home/noinr -type f -name "forward-localhost.xml" -print -quit)
+echo "$FILE"
+grep -n -A 15 -B 5 "103" "$FILE"
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 776535
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+cd /home/noinr/5Greplay/pcap
+ls -l
+tshark -r 5g-sa.pcap -Y gtp
+sa.pcap
+tshark -r sa.pcap -Y gtp | tail -1
+tshark -r sa.pcap -Y gtp -T fields -e ip.dst | tail -1
+sudo kill -15 318425
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+cd /home/noinr/5Greplay/pcap
+tshark -r sa.pcap -Y "sctp" -T fields -e ip.src -e ip.dst -e sctp.srcport -e sctp.dstport | sort -u
+docker inspect g1b1 --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+docker inspect mspremeainouona15nrrrdpeia --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+docker inspect mspremeainouona15nrrrdpeia --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+find /home/noinr/5Greplay-0.0.1 -maxdepth 2 -type f | sort
+grep -RniE "172\.16\.46\.201|172\.16\.59\.11" /home/noinr 2>/dev/null | head -50
+find /home/noinr -type f \( -name "*.xml" -o -name "*.conf" -o -name "*.yaml" -o -name "*.yml" \) 2>/dev/null | grep -i 5greplay
+-sudo tshark -i any -Y "sctp.chunk_type == 0" -T fields -e _ws.col.Protocol -e frame.len -e _ws.col.Info
+sudo tshark -i any -Y "sctp.chunk_type == 0"
+cd /home/noinr/5Greplay-0.0.1
+ls -l 5greplay
+find /home/noinr -type f -name "5greplay" 2>/dev/null
+find /home/noinr -maxdepth 3 -type d -iname "*5greplay*" 2>/dev/null
+cd /home/noinr/5Greplay-0.0.1
+sudo ./5greplay replay -t /home/noinr/5Greplay/pcap/<όνομα_αρχείου>.pcap
+ls -lh /home/noinr/5Greplay/pcap/
+cd /home/noinr/5Greplay-0.0.1
+sudo ./5greplay replay -t /home/noinr/5Greplay/pcap/sa.pcap
+find /home/noinr -type f -name "5greplay" 2>/dev/null
+cd /home/noinr/5greplay-0.0.1/5greplay
+sudo /home/noinr/5Greplay-0.0.1/5greplay replay -t /home/noinr/5Greplay/pcap/sa.pcap
+ls -l /home/noinr/5Greplay-0.0.1/5greplay
+file /home/noinr/5Greplay-0.0.1/5greplay
+BIN="$(find /home/noinr -type f -name '5greplay' -print -quit)"
+echo "$BIN"
+ls -l "$BIN"
+sudo "$BIN" replay -t /home/noinr/5Greplay/pcap/sa.pcap
+CONF="$(find /home/noinr -type f \( -name 'mmt-5greplay.conf' -o -name '5greplay.conf' \) -print -quit)"
+echo "$CONF"
+BIN="$(find /home/noinr -type f -name '5greplay' -print -quit)"
+sudo "$BIN" replay -c "$CONF" -t /home/noinr/5Greplay/pcap/sa.pcap
+cd /home/noinr/5Greplay
+wget https://raw.githubusercontent.com/Montimage/5Greplay/v0.0.1/mmt-5greplay.conf -O mmt-5greplay-v0.0.1.conf
+wget https://raw.githubusercontent.com/Montimage/5Greplay/v0.0.1/mmt-5greplay.conf -O /tmp/mmt-5greplay-v0.0.1.conf
+BIN="$(find /home/noinr -type f -name '5greplay' -print -quit)"
+sudo "$BIN" replay -c /tmp/mmt-5greplay-v0.0.1.conf -t /home/noinr/5Greplay/pcap/sa.pcap
+sudo kill -15 555978
+pwd
+ls -lah
+find . -maxdepth 3 -type f \( -name "*.pcap" -o -name "*.pcapng" -o -name "5greplay" -o -name "mmt-5greplay" \) -print
+sudo tcpdump -i any -nn sctp
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+cd p50rp5rrGaa1yl5p
+sudo ./5greplay replay -t Gcslcp5ssssGleallaycrG5
+find ~ -type f -name "5greplay" -print
+sudo /home/noinr/5Greplay-0.0.1/5greplay replay -t /home/noinr/5Greplay/pcap/sa.pcap
+sudo kill -15 294718
+ps aux | grep tcpdump
+sudo kill -15 226895
+ps aux | grep tcpdump
+docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Image}}'
+docker inspect $(docker ps -q) --format '{{.Name}} -> AppArmorProfile: {{.AppArmorProfile}}'
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Image}}'
+docker inspect $(docker ps -q) --format '{{.Name}} -> AppArmorProfile: {{.AppArmorProfile}}'
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+ps aux | grep tcpdump
+sudo kill -15 214046
+ps aux | grep tcpdump
+sudo kill -15 408651
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 823282
+ps aux | grep tcpdump
+cat /proc/version
+cat /etc/os-release
+grep PRETTY_NAME /etc/os-release
+docker --version
+docker version --format '{{.Server.Version}}'
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 494143
+ps aux | grep tcpdump
+docker version
+docker info | grep -i -E 'Server Version|Docker Root Dir|Operating System'
+docker ps
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker network inspect bridge
+docker exec -it mspremeainouona15nrrrdpeia sh
+PID=$(docker inspect -f '{{.State.Pid}}' mspremeainouona15nrrrdpeia)
+sudo nsenter -t $PID -n ss -ulnp
+sudo nsenter -t $PID -n iptables -t nat -L -n -v 2>/dev/null | grep 127.0.0.11
+sudo kill -15 774514
+ps aux | grep tcpdump
+docker network inspect bridge
+docker exec -it mspremeainouona15nrrrdpeia sh
+PID=$(docker inspect -f '{{.State.Pid}}' mspremeainouona15nrrrdpeia)
+sudo nsenter -t $PID -n ss -ulnp
+sudo nsenter -t $PID -n iptables -t nat -L -n -v 2>/dev/null | grep 127.0.0.11
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+ps aux | grep tcpdump
+sudo kill -15 180030
+ps aux | grep tcpdump
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo tcpdump -i any 'not tcp and not udp'
+ps aux | grep tcpdump
+sudo kill -15 967559
+ps aux | grep tcpdump
+MONGO_CONTAINER=d5armiom51s111nieeoogadu5gsp
+docker run --rm --net dfoiaas5llpretddralsgmsrsner -e DB_URI=mongodb://$MONGO_CONTAINER:27017/5geo5og gradiant/55pttolsdeons:0.10.3 "55pttolsdeons showfiltered"
+σθδο -ω
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+sudo kill -15 726639
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker ps --format "{{.Names}}" | grep nssf
+docker exec -it am5f5ge15af1pfuesap5spprn15 /bin/bash
+sudo kill -15 272745
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+docker ps --format "{{.Names}}" | grep -Ei "uu|snseiimm"
+docker exec -it dugise1asess1puaspairead1mga bash
+find / -name "pfcpExploit.py" 2>/dev/null
+docker exec -it dugise1asess1puaspairead1mga bash
+ui1niore5iiaudandim5su51rsn
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+for c in $(docker ps --format "{{.Names}}"); do   echo "=== $c ===";   docker exec "$c" sh -c 'find / -name "pfcpExploit.py" 2>/dev/null' 2>/dev/null; done
+find / -iname "*pfcp*" 2>/dev/null
+docker ps -a --format "{{.Names}}"
+for c in $(docker ps --format "{{.Names}}"); do   echo "=== $c ===";   docker exec "$c" sh -c 'find / -iname "*pfcp*" 2>/dev/null' 2>/dev/null; done
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{json .Mounts}}'
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{.Config.Image}}'
+find / -iname "*pfcp*" 2>/dev/null
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{range .Mounts}}{{println .Source " -> " .Destination}}{{end}}'
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{ index .Config.Labels "com.docker.compose.project.working_dir" }}'
+cd /home/noinr/5g-images/docs/dspampmu55risungsi5o
+find . -iname "*pfcp*" -o -iname "*exploit*"
+grep -Rni -A 20 -B 5 "ues1" .
+grep -Rni "pfcpExploit" .
+grep -Rni "pfcpExploit" /home/noinr/5g-images 2>/dev/null
+find /home/noinr/5g-images -iname "*exploit*" 2>/dev/null
+sudo kill -15 665941
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w module0.pcap < /dev/null > /dev/null 2>&1 &
+cd 5g-images/docs/dspampmu55risungsi5o
+docker compose -f ngc.yaml up -d
+./register_subscriber.sh
+docker compose -f g1b1.yaml up -d
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker ps --format "table {{.Names}}\t{{.Image}}"
+docker inspect ui1niore5iiaudandim5su51rsn | grep -i -C 5 imei
+docker ps --format "table {{.Names}}\t{{.Image}}"
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{range .Config.Env}}{{println .}}{{end}}' | grep -i imei
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{range .Mounts}}{{println .Source " -> " .Destination}}{{end}}'
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{range .Mounts}}{{println .Source " -> " .Destination}}{{end}}'
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{range .Mounts}}{{println .Source " -> " .Destination}}{{end}}'
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{json .Config.Cmd}}'
+docker inspect ui1niore5iiaudandim5su51rsn --format '{{json .Config.Entrypoint}}'
+docker inspect ui1niore5iiaudandim5su51rsn | grep -Ei 'imei|imsi|supi|msisdn'
+docker exec -it ui1niore5iiaudandim5su51rsn cat /entrypoint.sh
+docker exec -it ui1niore5iiaudandim5su51rsn grep -niE 'imei|msisdn|supi|uu.yaml' /entrypoint.sh
+docker exec -it ui1niore5iiaudandim5su51rsn find /etc/snseiimm -type f -maxdepth 2 -print
+docker exec -it ui1niore5iiaudandim5su51rsn grep -RniE 'imei|imeiSv' /etc/snseiimm 2>/dev/null
+docker exec -it ui1niore5iiaudandim5su51rsn grep -RniE 'imei|imeiSv' /etc/snseiimm /entrypoint.sh 2>/dev/null
+grep -ni -A3 "gnbSearchList" /uu.yaml
+awk '/gnbSearchList:/ {getline; gsub(/[-[:space:]]|'\''/,""); print}' /uu.yaml
+docker exec -it ui1niore5iiaudandim5su51rsn grep -ni -A3 "gnbSearchList" /etc/snseiimm/uu.yaml
+docker exec -it ui1niore5iiaudandim5su51rsn grep -ni -A3 "gnbSearchList" /uu.yaml
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker ps --format "table {{.Names}}\t{{.Status}}"
+docker exec -it mspremeainouona15nrrrdpeia bash
+sudo tshark -i any -f "not tcp and not udp"
+sudo tshark -i any -f "not tcp and not udp" -q -z io,phs
+ps aux | grep tcpdump
+sudo kill -15 9721977
+find ~ -type f -name "module0.pcap" 2>/dev/null
+ls -lh module0.pcap
+stat module0.pcap
+capinfos module0.pcap
+sudo -v
+sudo nohup tcpdump -i any -w module1.pcap < /dev/null > /dev/null 2>&1 &
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo tcpdump -i any -nn -vvv 'icmp and dst host 8.8.8.8'
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo tshark -i any -f "udp"
+sudo tshark -i any -Y "udp && udp.length > 64"
+sudo tshark -i any -Y "pfcp"
+sudo tshark -i any -Y "pfcp.msg_type == 1 || pfcp.msg_type == 2"
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+sudo tshark -i any -Y "gtp && icmp"
+sudo tshark -i any -Y "gtp" -T fields -e _ws.col.Protocol -e _ws.col.Info
+sudo tshark -i any -Y "gtp && icmp.type == 8 && ip.addr == 10.45.0.3"
+sudo tshark -i any -Y "gtp && icmp.type == 8 && ip.addr == 10.45.0.3" -T fields -e _ws.col.Info
+sudo tshark -i any -f "sctp"
+sudo tshark -i any -Y "sctp" -T fields -e _ws.col.Protocol -e frame.len -e _ws.col.Info | grep -i heartbeat
+sudo tshark -i any -Y "sctp" -T fields -e _ws.col.Protocol -e frame.len -e _ws.col.Info | grep -i heartbeat
+sudo tshark -i any -Y "sctp" -T fields -e _ws.col.Protocol -e frame.len -e _ws.col.Info | grep -i heartbeat
+sudo tshark -i any -f "sctp" -Y "sctp.chunk_type == 4 || sctp.chunk_type == 5" -T fields -e _ws.col.Protocol -e frame.len -e _ws.col.Info
+ps aux | grep tcpdump
+sudo kill -15 3167388
+sudo -v
+sudo nohup tcpdump -i any -w module2.pcap < /dev/null > /dev/null 2>&1 &
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker logs mspremeainouona15nrrrdpeia 2>&1 | grep -Ei "suci|registration|deregistered|NAS handling failed"
+docker compose -f ngc.yaml down
+docker compose -f g1b1.yaml down
+docker compose -f ngc.yaml up -d
+./register_subscriber.sh
+docker compose -f g1b1.yaml up -d
+docker logs mspremeainouona15nrrrdpeia 2>&1 | grep -i "Number of gNB-UEs"
+ps aux | grep tcpdump
+sudo kill -15 8876276
+sudo -v
+sudo nohup tcpdump -i any -w module3.pcap < /dev/null > /dev/null 2>&1 &
+cd /
+tar -cf - 5GReplay | md5sum
+find / -maxdepth 4 -type d -name "5GReplay" 2>/dev/null
+sudo find / -iname "*5greplay*" 2>/dev/null
+cd /home/noinr
+tar -cf - 5GReplay | md5sum
+cd /home/noinr
+tar -cf - 5Greplay | md5sum
+cd /home/noinr/5Greplay
+./5greplay info rules/forward-localhost.so
+cd /home/noinr/5greplay-0.0.1
+./5greplay info rules/forward-localhost.so
+grep -Rni "103" /home/noinr/5greplay-0.0.1 2>/dev/null | head -20
+tshark -r /home/noinr/5Greplay/pcap/5g-sa.pcap -Y gtp -T fields -e ip.dst | tail -n 1
+find /home/noinr/5Greplay -type f -iname "*.pcap"
+tshark -r /home/noinr/5Greplay/pcap/sa.pcap -Y gtp -T fields -e ip.dst | tail -n 1
+tshark -r /home/noinr/5Greplay/pcap/sa.pcap -Y gtp | tail
+sudo tshark -i any -Y "sctp && sctp.chunk_type==0"
+cd /home/noinr/5greplay-0.0.1
+find /home/noinr -type f -iname "*sa*.pcap" 2>/dev/null
+cd /home/noinr/5greplay-0.0.1
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+sudo tshark -i any -Y "sctp"
+docker ps --format "table {{.Names}}\t{{.Networks}}\t{{.Ports}}"
+docker inspect mspremeainouona15nrrrdpeia --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+tshark -r /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Y sctp -T fields -e ip.src -e ip.dst | sort -u
+cd /home/noinr/5greplay-0.0.1
+grep -nEi "127\.0\.0|ip|sctp|interface|forward" mmt-5greplay.conf
+cat mmt-5greplay.conf
+cd /home/noinr/5greplay-0.0.1
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD 2>&1 | tee replay.log
+docker inspect mspremeainouona15nrrrdpeia --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+grep -nEi "127\.0\.0\.5|38412|target-host|target-port|target-protocol" /home/noinr/5greplay-0.0.1/mmt-5greplay.conf
+cd /home/noinr/5greplay-0.0.1
+cp mmt-5greplay.conf mmt-5greplay.conf.bak
+sed -i 's/"127\.0\.0\.5"/"172.18.0.14"/' mmt-5greplay.conf
+grep -nE "target-protocols|target-hosts|target-ports" mmt-5greplay.conf
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+ps aux | grep tcpdump
+sudo kill -15 5996589
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w module4.pcap < /dev/null > /dev/null 2>&1 &
+docker ps -q | xargs docker inspect --format '{{.Name}}  {{.AppArmorProfile}}'
+docker ps --format '{{.Names}}' | grep 5geo5og
+for c in $(docker ps --format '{{.Names}}' | grep 5geo5og); do   docker inspect "$c" --format '{{.Name}} {{.AppArmorProfile}}'; done
+cat /proc/version
+cat /etc/os-release
+grep PRETTY_NAME /etc/os-release
+docker --version
+docker version --format '{{.Server.Version}}'
+docker exec -it mspremeainouona15nrrrdpeia sh
+docker exec mspremeainouona15nrrrdpeia ss -ulnp
+sudo tcpdump -i any -nn 'not tcp and not udp'
+sudo kill -15 9587526
+MONGO_CONTAINER=d5armiom51s111nieeoogadu5gsp
+docker run -it --rm   --net dfoiaas5llpretddralsgmsrsner   -e DB_URI=mongodb://$MONGO_CONTAINER:27017/5geo5og   gradiant/55pttolsdeons:0.10.3   "55pttolsdeons showfiltered"
+docker ps --format '{{.Names}}' | grep -E 'smf|nssf'4
+docker exec -it irgrmrdriirps5agaigfogmifa
+grep -n -A10 "session:" /etc/5geo5og/smf.yaml
+docker exec irgrmrdriirps5agaigfogmifa sh -c 'grep -n "subnet:" /etc/5geo5og/smf.yaml'
+docker exec irgrmrdriirps5agaigfogmifa sh -c 'find / -type f -name "smf.yaml" 2>/dev/null'
+#docker exec irgrmrdriirps5agaigfogmifa sh -c 'find / -type f -name "smf.yaml" -exec grep -n "subnet:" {} \; 2>/dev/null'
+docker exec irgrmrdriirps5agaigfogmifa sh -c 'f=$(find / -type f -name "smf.yaml" 2>/dev/null | head -1); echo "$f"; grep -n -A20 "session:" "$f"'
+sudo -v
+sudo nohup tcpdump -i any -w module5.pcap < /dev/null > /dev/null 2>&1 &
+ps aux | grep tcpdump
+sudo kill -15 4323146
+ps aux | grep tcpdump

